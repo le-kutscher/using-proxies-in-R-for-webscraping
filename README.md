@@ -4,6 +4,8 @@ I recently did my first experiments in webscraping and I got excited about all t
 
 I was annoyed that a lot of tutorials for using proxies in R only show how this works with certain packages (e.g. rvest). I wanted a all-in-one solution, particularly because I scrape a lot of JSONs using the jsonlite-package (which doesn't have built-in proxy possibilities). So here you go, a quick and easy way to *set your proxies just once in the environment and then use it with all packages*. 
 
+Always be polite and ask first (or check the robots.txt file of the host) before you consider scraping data. 
+
 ## Step 1: check your own IP (localy)
 Check the configuration of your system to find your IP. 
 We will not change this, because we don't want to change your IP but only redirect any request you do through a proxy. 
