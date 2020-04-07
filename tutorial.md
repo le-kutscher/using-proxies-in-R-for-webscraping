@@ -1,8 +1,10 @@
+# Webscraping in R: using proxies
+
 I recently did my first experiments in webscraping and I got excited about all the cool data that you can use if you know how to download it. However, I was getting worried of being blacklisted by the websites I scrape, because they see me requesting their website every 15 minutes or so. Hence, I found out that you can use proxies, that more or less request the website for you and then send it back to you (very broadly speaking). 
 
 I was annoyed that a lot of tutorials for using proxies in R only show how this works with certain packages (e.g. rvest). I wanted a all-in-one solution, particularly because I scrape a lot of JSONs using the jsonlite-package (which doesn't have built-in proxy possibilities). So here you go, a quick and easy way to *set your proxies just once in the environment and then use it with all packages*. 
 
-## Step 1: check your own IP (locally)
+## Step 1: check your own IP (localy)
 Check the configuration of your system to find your IP. 
 We will not change this, because we don't want to change your IP but only redirect any request you do through a proxy. 
 ```{r}
