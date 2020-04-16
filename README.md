@@ -6,7 +6,7 @@ I was annoyed that a lot of tutorials for using proxies in R only show how this 
 
 Always be polite and ask first (or check the robots.txt file of the host) before you consider scraping data. 
 
-## Step 1: check your own IP (localy)
+## Step 1: check your own IP (locally)
 Check the configuration of your system to find your IP. 
 We will not change this, because we don't want to change your IP but only redirect any request you do through a proxy. 
 ```{r}
